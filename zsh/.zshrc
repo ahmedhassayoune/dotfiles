@@ -23,6 +23,11 @@ bindkey -v
 export KEYTIMEOUT=1
 source "$ZDOTDIR/plugins/cursor_mode.zsh" # Change cursor
 
+# Vim backspace=indent,eol,start
+bindkey "^?" backward-delete-char
+bindkey "^[[3~" delete-char
+bindkey -a "^[[3~" delete-char
+
 # Add Vi text-objects for brackets and quotes
 autoload -Uz select-bracketed select-quoted
 zle -N select-quoted
