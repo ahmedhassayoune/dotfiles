@@ -37,5 +37,8 @@ for km in viopp visual; do
   done
 done
 
+# -- Include colors in commands (ls, tree ...)
+eval "$(dircolors -b)"
+
 # -- Theme
 eval "$(starship init zsh)"
