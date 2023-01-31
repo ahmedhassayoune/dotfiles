@@ -16,3 +16,6 @@ export SAVEHIST=10000                   # Maximum events in history file
 
 # -- EPITA
 export NNTPSERVER="news.epita.fr"
+
+# -- VsCode bin
+export PATH="$PATH:/mnt/c/Users/Ahmed/AppData/Local/Programs/Microsoft VS Code/bin"
