@@ -42,6 +42,9 @@ for km in viopp visual; do
   done
 done
 
+# -- Completion
+source $ZDOTDIR/completion.zsh
+
 # -- Include colors in commands (ls, tree ...)
 eval "$(dircolors -b)"
 
