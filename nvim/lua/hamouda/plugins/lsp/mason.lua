@@ -24,10 +24,13 @@ mason_lspconfig.setup({
 	ensure_installed = {
 		"clangd",
 		"html",
-		"sumneko_lua",
+		"lua_ls",
 		"bashls",
-		"jdtls",
-		"sqlls",
+		"dotls",
+		"dockerls",
+		"jsonls",
+		"pyright",
+		"yamlls",
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
@@ -36,12 +39,13 @@ mason_lspconfig.setup({
 mason_null_ls.setup({
 	-- list of formatters & linters for mason to install
 	ensure_installed = {
-		-- "clang-format", -- c
 		"shellcheck", -- shell
 		"shfmt", -- shell formatter
 		"stylua", -- lua formatter
-		"sqlfluff",
-		"sql_formatter", -- sql formatter
+		"yamllint",
+		"clang-format", -- formatter
+		"yamlfmt", -- yaml formatter
+		"cpplint", -- c++ linter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,

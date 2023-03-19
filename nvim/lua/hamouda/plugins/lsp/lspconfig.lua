@@ -38,38 +38,48 @@ local capabilities = cmp_nvim_lsp.default_capabilities()
 -- local clangd_capabilities = cmp_nvim_lsp.default_capabilities()
 -- clangd_capabilities.offsetEncoding = "utf-8"
 
--- configure html server
-lspconfig["html"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
--- configure clangd server
 lspconfig["clangd"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
 
--- configure html server
+lspconfig["html"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 lspconfig["bashls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
 
--- configure java server
-lspconfig["jdtls"].setup({
+lspconfig["dotls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
 
--- configure sql server
-lspconfig["sqlls"].setup({
+lspconfig["dockerls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+lspconfig["jsonls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+lspconfig["pyright"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+lspconfig["yamlls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
 
 -- configure lua server (with special settings)
-lspconfig["sumneko_lua"].setup({
+lspconfig["lua_ls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	settings = { -- custom settings for lua
