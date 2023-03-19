@@ -7,7 +7,6 @@ export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-
 # -- ZSH
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
@@ -19,3 +18,15 @@ export NNTPSERVER="news.epita.fr"
 
 # -- VsCode bin
 export PATH="$PATH:/mnt/c/Users/Ahmed/AppData/Local/Programs/Microsoft VS Code/bin"
+
+# -- Java
+JAVA_HOME="/opt/jdk-13.0.1"
+#export PATH="$PATH:$JAVA_HOME/bin"
+
+# -- Maven
+M2_HOME='/opt/apache-maven-3.6.3'
+#export PATH="$PATH:$M2_HOME/bin"
+
+# -- Postgresql
+export PGDATA="$HOME/postgres_data"
+export DB_USERNAME="ahmed.hassayoune"
