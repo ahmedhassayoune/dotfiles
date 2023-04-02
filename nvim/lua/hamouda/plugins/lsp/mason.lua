@@ -30,7 +30,7 @@ mason_lspconfig.setup({
 		"dockerls",
 		"jsonls",
 		"pyright",
-		"yamlls",
+		-- "yamlls",
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
@@ -42,8 +42,8 @@ mason_null_ls.setup({
 		"shellcheck", -- shell
 		"shfmt", -- shell formatter
 		"stylua", -- lua formatter
-		"yamllint",
-		"clang-format", -- formatter
+		-- "yamllint",
+		-- "clang-format", -- formatter
 		"yamlfmt", -- yaml formatter
 		"cpplint", -- c++ linter
 	},
