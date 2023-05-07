@@ -18,6 +18,9 @@ source "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 # -- Quickly go back to a specific parent directory (cd ../../..) using bd
 source "$ZDOTDIR/plugins/bd.zsh"
 
+# -- Insert sudo at the beginning of a command
+source "$ZDOTDIR/plugins/sudo.zsh"
+
 # -- Vim options
 bindkey -v
 export KEYTIMEOUT=1
@@ -44,6 +47,11 @@ done
 
 # -- Completion
 source $ZDOTDIR/completion.zsh
+
+# -- nvm
+export NVM_DIR="$XDG_CONFIG_HOME/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # -- Include colors in commands (ls, tree ...)
 eval "$(dircolors -b)"
