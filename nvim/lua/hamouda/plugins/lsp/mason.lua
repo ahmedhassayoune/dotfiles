@@ -30,6 +30,9 @@ mason_lspconfig.setup({
 		"dockerls",
 		"jsonls",
 		"pyright",
+		"tsserver",
+		"cssls",
+		"tailwindcss",
 		-- "yamlls",
 	},
 	-- auto-install configured servers (with lspconfig)
@@ -46,6 +49,8 @@ mason_null_ls.setup({
 		-- "clang-format", -- formatter
 		"yamlfmt", -- yaml formatter
 		"cpplint", -- c++ linter
+		"prettier", -- ts/js formatter
+		"eslint_d", -- ts/js linter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
