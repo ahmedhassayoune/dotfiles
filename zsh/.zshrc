@@ -18,9 +18,6 @@ source "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 # -- Quickly go back to a specific parent directory (cd ../../..) using bd
 source "$ZDOTDIR/plugins/bd.zsh"
 
-# -- Insert sudo at the beginning of a command
-source "$ZDOTDIR/plugins/sudo.zsh"
-
 # -- Vim options
 bindkey -v
 export KEYTIMEOUT=1
